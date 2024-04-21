@@ -44,3 +44,33 @@ app.post('/product',async (req,res)=>{
         res.status(400).json({error:error.message})
     }
 })
+app.get('/product/:id',async (req,res)=>{
+    const name=req.params.id
+    console.log(name)
+    const presult=await productmodel.find({name:new RegExp(name,"i")})
+    if(!presult)
+        res.status(400).json({error:"product doesnt exist"})
+    else
+        res.status(200).json(presult)
+})
+app.get('/getproduct/:id',async (req,res)=>{
+    const id=req.params.id
+    console.log(id)
+    const presult=await productmodel.findOne({_id:id})
+    if(!presult)
+        res.status(400).json({error:"product doesnt exist"})
+    else
+        res.status(200).json(presult)
+})
+app.get('/product',async (req,res)=>{
+    const plist=await productmodel.find({}).limit(52)
+    console.log(plist.length)
+    res.status(200).json(plist)
+    console.log("got products")
+})
+mongoose.connect(process.env.MURL) //connect to database , then create middleware server
+.then(()=>{
+    app.listen(5002,()=>console.log("uc2 running"))
+}).catch((error) => {
+    console.log(error)
+})
