@@ -34,4 +34,13 @@ const productmodel=mongoose.model('products',productschema)
 app.get('/',(req,res)=>{
     res.json({message:"hello from uc2"})
 })
-
+app.post('/product',async (req,res)=>{
+    const{name,imgsrc,desc,price}=req.body;
+    try{
+        const product=await productmodel.create({name,imgsrc,desc,price})
+        res.status(200).json(product)
+    }catch(error)
+    {
+        res.status(400).json({error:error.message})
+    }
+})
