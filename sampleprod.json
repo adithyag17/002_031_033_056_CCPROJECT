@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Stylish Sneakers",
+    "imgsrc": "https://example.com/sneakers.jpg",
+    "desc": "Comfortable sneakers for everyday wear.",
+    "price": 59.99
+  },
+  {
+    "name": "Classic Leather Bag",
+    "imgsrc": "https://example.com/leather_bag.jpg",
+    "desc": "Elegant leather bag with multiple compartments.",
+    "price": 129.99
+  },
+  {
+    "name": "Smartwatch",
+    "imgsrc": "https://example.com/smartwatch.jpg",
+    "desc": "Track your fitness and receive notifications.",
+    "price": 149.99
+  },
+  {
+    "name": "Cozy Blanket",
+    "imgsrc": "https://example.com/blanket.jpg",
+    "desc": "Soft and warm blanket for chilly evenings.",
+    "price": 39.99
+  },
+  {
+    "name": "Wireless Earbuds",
+    "imgsrc": "https://example.com/earbuds.jpg",
+    "desc": "High-quality earbuds with noise cancellation.",
+    "price": 79.99
+  },
+  {
+    "name": "Vintage Sunglasses",
+    "imgsrc": "https://example.com/sunglasses.jpg",
+    "desc": "Retro-style sunglasses for a cool look.",
+    "price": 29.99
+  },
+  {
+    "name": "Organic Tea Set",
+    "imgsrc": "https://example.com/tea_set.jpg",
+    "desc": "Assorted organic teas in a beautifully crafted set.",
+    "price": 19.99
+  },
+
+  {
+    "name": "Laptop Backpack",
+    "imgsrc": "https://example.com/backpack.jpg",
+    "desc": "Durable backpack with padded laptop compartment.",
+    "price": 49.99
+  },
+  {
+    "name": "Handcrafted Ceramic Mug",
+    "imgsrc": "https://example.com/mug.jpg",
+    "desc": "Unique mug for your morning coffee or tea.",
+    "price": 14.99
+  },
+  {
+    "name": "Fitness Resistance Bands",
+    "imgsrc": "https://example.com/resistance_bands.jpg",
+    "desc": "Set of resistance bands for home workouts.",
+    "price": 24.99
+  }
+]
