@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend-container
-        image: abishekd/frontend:latest
+        image: adithyag17/frontend:latest
         ports:
         - containerPort: 3000
 ---
@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: uc1-container
-        image: akarshj21/uc1:latest
+        image: adithyag17/uc1:latest
         ports:
         - containerPort: 5001
 ---
@@ -57,7 +57,7 @@ spec:
     spec:
       containers:
       - name: uc2-container
-        image: akarshj21/uc2:latest
+        image: adithyag17/uc2:latest
         ports:
         - containerPort: 5002
 ---
@@ -78,7 +78,7 @@ spec:
     spec:
       containers:
       - name: uc3-container
-        image: akarshj21/uc3:latest
+        image: adithyag17/uc3:latest
         ports:
         - containerPort: 5003
 ---
