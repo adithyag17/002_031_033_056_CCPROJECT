@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    bat 'copy.bat'
+                    
                     bat 'docker build -t uc1 ./uc1'
                     bat 'docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD} docker.io'
                     bat 'docker tag uc1 ${DOCKER_USERNAME}/uc1:latest'
