@@ -95,7 +95,7 @@ app.get('/history/:user',async(req,res)=>{
     const uresult = await userhistory.findOne({user:user})
     res.status(200).json(uresult.cart_history)
 })
-mongoose.connect(process.env.MURL) //connect to database , then create middleware server
+mongoose.connect("mongodb+srv://dino:dino@dinodatabase.svttppf.mongodb.net/?retryWrites=true&w=majority&appName=Dinodatabase") //connect to database , then create middleware server
 .then(()=>{
     app.listen(5003,()=>console.log("uc3 running"))
 }).catch((error) => {
