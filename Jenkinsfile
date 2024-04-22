@@ -33,10 +33,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Deploy Kubernetes resources
-                bat 'minikube start'
-                bat 'kubectl -- apply -f kubernetes.yaml'
-                bat 'kubectl get pods --all-namespaces'
-                bat 'minikube tunnel'
+                bat 'kubectl config use-context minikube
+'
+                bat 'minikube kubectl -- apply -f kubernetes.yaml'
+                
             }
         }
     }
