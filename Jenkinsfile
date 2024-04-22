@@ -4,8 +4,8 @@ pipeline {
     environment {
         // Define Docker credentials
         DOCKER_CREDENTIALS = credentials('docker-credentials')
-        DOCKER_USERNAME = DOCKER_CREDENTIALS_USR
-        DOCKER_PASSWORD = DOCKER_CREDENTIALS_PSW
+        DOCKER_USERNAME = "${DOCKER_CREDENTIALS_USR}"
+        DOCKER_PASSWORD = "${DOCKER_CREDENTIALS_PSW}"
     }
     
     stages {
