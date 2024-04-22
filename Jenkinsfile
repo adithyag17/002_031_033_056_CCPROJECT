@@ -34,7 +34,7 @@ pipeline {
             steps {
                 // Deploy Kubernetes resources
                 bat 'kubectl config use-context minikube'
-                bat 'minikube kubectl -- apply -f kubernetes.yaml'
+                bat 'kubectl apply -f kubernetes.yaml'
                 
             }
         }
