@@ -6,8 +6,8 @@ pipeline {
             steps {
                 script {
                     // Hardcoded Docker credentials
-                    def DOCKER_USERNAME = "adithyag17"
-                    def DOCKER_PASSWORD = 'Adi2012@$'
+                    def DOCKER_USERNAME = "sakthe6942"
+                    def DOCKER_PASSWORD = 'sakthesakthe'
                     
                     // Build and push Docker images
                     bat 'docker build -t uc1 ./uc1'
