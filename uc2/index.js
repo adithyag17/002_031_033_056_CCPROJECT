@@ -29,7 +29,7 @@ const productschema=new schema({
         required:true
     }
 })
-const productmodel=mongoose.model('products',productschema)
+const productmodel=mongoose.model('ccproj',productschema)
 
 app.get('/',(req,res)=>{
     res.json({message:"hello from uc2"})
