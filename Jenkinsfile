@@ -34,8 +34,8 @@ pipeline {
             steps {
                 // Deploy Kubernetes resources
                
-                bat 'kubectl -- apply -f kubernetes.yaml'
-                bat 'minikube kubectl get pods --all-namespaces'
+                bat 'minikube kubectl -- apply -f kubernetes.yaml'
+                bat 'kubectl get pods --all-namespaces'
                 bat 'minikube tunnel'
             }
         }
