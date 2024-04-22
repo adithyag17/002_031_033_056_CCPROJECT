@@ -68,7 +68,7 @@ app.get('/product',async (req,res)=>{
     res.status(200).json(plist)
     console.log("got products")
 })
-mongoose.connect(process.env.MURL) //connect to database , then create middleware server
+mongoose.connect("mongodb+srv://dino:dino@dinodatabase.svttppf.mongodb.net/?retryWrites=true&w=majority&appName=Dinodatabase") //connect to database , then create middleware server
 .then(()=>{
     app.listen(5002,()=>console.log("uc2 running"))
 }).catch((error) => {
